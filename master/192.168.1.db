@@ -1,0 +1,17 @@
+$ORIGIN 1.168.192.in-addr.arpa.
+$TTL 2d
+@             IN      SOA   ns1.organization.ua. hostmaster.organization.ua. (
+                              2003080800 ; serial number
+                              12h         ; refresh
+                              15m        ; update retry
+                              3w         ; expiry
+                              3h         ; NXDOMAIN ttl
+                              )
+
+                    NS      ns1.organization.ua.
+                    NS      ns2.organization.ua.
+
+2             IN      PTR     joe.organization.ua. 
+15            IN      PTR     www.organization.ua.
+17            IN      PTR     bill.organization.ua.
+74            IN      PTR     fred.organization.ua.

@@ -1,0 +1,16 @@
+options {
+ directory "/var/cache/bind";
+ listen-on {
+ 192.168.1.0/24;
+ 127.0.0.1;
+ };
+ forwarders {
+ 77.88.8.1;
+ 8.8.8.8;
+ };
+
+ dnssec-validation auto;
+ auth-nxdomain no;
+ listen-on-v6 { all; };
+ version "DNS server v1.0";
+};
